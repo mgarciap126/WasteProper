@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './logout.html',
   styleUrl: './logout.css'
 })
-export class Logout {
+export default class Logout {
 
 }
