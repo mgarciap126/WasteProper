@@ -1,1 +1,26 @@
-<p>register works!</p>
+<div class="container mt-4">
+  <h2>Registrar Cliente</h2>
+  <form (ngSubmit)="register()">
+    <div class="mb-3">
+      <label for="name" class="form-label">Nombre</label>
+      <input id="name" [(ngModel)]="name" name="name" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Email de Contacto</label>
+      <input id="email" type="email" [(ngModel)]="contactEmail" name="contactEmail" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+      <label for="revenue" class="form-label">Ingresos</label>
+      <input id="revenue" type="number" [(ngModel)]="revenue" name="revenue" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+      <label for="startDate" class="form-label">Fecha de Inicio</label>
+      <input id="startDate" type="date" [(ngModel)]="startDate" name="startDate" class="form-control" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Registrar</button>
+  </form>
+</div>
