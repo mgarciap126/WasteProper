@@ -13,6 +13,7 @@ import { Client } from '../../services/client';
 })
 export default class Login {
   contactEmail = '';
+  nombre = '';
   error = '';
   loading = false;
 
